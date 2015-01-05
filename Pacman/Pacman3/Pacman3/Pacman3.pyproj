@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>39611b08-17b5-438c-8b4e-0caf2c58b00a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>pacman.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Pacman3</Name>
+    <RootNamespace>Pacman3</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>-p ApproximateQAgent -a extractor=SimpleExtractor -x 50 -n 60 -l mediumClassic </CommandLineArguments>
+    <InterpreterPath />
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="analysis.py" />
+    <Compile Include="crawler.py" />
+    <Compile Include="environment.py" />
+    <Compile Include="featureExtractors.py" />
+    <Compile Include="game.py" />
+    <Compile Include="ghostAgents.py" />
+    <Compile Include="graphicsCrawlerDisplay.py" />
+    <Compile Include="graphicsDisplay.py" />
+    <Compile Include="graphicsGridworldDisplay.py" />
+    <Compile Include="graphicsUtils.py" />
+    <Compile Include="gridworld.py" />
+    <Compile Include="keyboardAgents.py" />
+    <Compile Include="layout.py" />
+    <Compile Include="learningAgents.py" />
+    <Compile Include="mdp.py" />
+    <Compile Include="pacman.py" />
+    <Compile Include="Pacman3.py" />
+    <Compile Include="pacmanAgents.py" />
+    <Compile Include="qlearningAgents.py" />
+    <Compile Include="textDisplay.py" />
+    <Compile Include="textGridworldDisplay.py" />
+    <Compile Include="util.py" />
+    <Compile Include="valueIterationAgents.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="capsule.png" />
+    <Content Include="commands.txt" />
+    <Content Include="crawler.png" />
+    <Content Include="define-eqn1.png" />
+    <Content Include="define-eqn2.png" />
+    <Content Include="discountgrid.png" />
+    <Content Include="docs\analysis.html" />
+    <Content Include="docs\crawler.html" />
+    <Content Include="docs\environment.html" />
+    <Content Include="docs\featureExtractors.html" />
+    <Content Include="docs\game.html" />
+    <Content Include="docs\ghostAgents.html" />
+    <Content Include="docs\graphicsCrawlerDisplay.html" />
+    <Content Include="docs\graphicsDisplay.html" />
+    <Content Include="docs\graphicsGridworldDisplay.html" />
+    <Content Include="docs\graphicsUtils.html" />
+    <Content Include="docs\gridworld.html" />
+    <Content Include="docs\keyboardAgents.html" />
+    <Content Include="docs\layout.html" />
+    <Content Include="docs\learningAgents.html" />
+    <Content Include="docs\mdp.html" />
+    <Content Include="docs\pacman.html" />
+    <Content Include="docs\pacmanAgents.html" />
+    <Content Include="docs\qlearningAgents.html" />
+    <Content Include="docs\textDisplay.html" />
+    <Content Include="docs\textGridworldDisplay.html" />
+    <Content Include="docs\util.html" />
+    <Content Include="docs\valueIterationAgents.html" />
+    <Content Include="layouts\capsuleClassic.lay" />
+    <Content Include="layouts\contestClassic.lay" />
+    <Content Include="layouts\mediumClassic.lay" />
+    <Content Include="layouts\mediumGrid.lay" />
+    <Content Include="layouts\minimaxClassic.lay" />
+    <Content Include="layouts\openClassic.lay" />
+    <Content Include="layouts\originalClassic.lay" />
+    <Content Include="layouts\smallClassic.lay" />
+    <Content Include="layouts\smallGrid.lay" />
+    <Content Include="layouts\testClassic.lay" />
+    <Content Include="layouts\trappedClassic.lay" />
+    <Content Include="layouts\trickyClassic.lay" />
+    <Content Include="pacman.png" />
+    <Content Include="projects.css" />
+    <Content Include="reinforcement.html" />
+    <Content Include="reinforcement.zip" />
+    <Content Include="value.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="docs\" />
+    <Folder Include="layouts\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

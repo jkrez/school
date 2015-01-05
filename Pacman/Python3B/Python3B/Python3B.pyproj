@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>07aa9786-3dce-4fba-ab64-0ffb815e2dcc</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>autograder.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Python3B</Name>
+    <RootNamespace>Python3B</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>-q q1</CommandLineArguments>
+    <InterpreterPath />
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="analysis.py" />
+    <Compile Include="autograder.py" />
+    <Compile Include="crawler.py" />
+    <Compile Include="environment.py" />
+    <Compile Include="featureExtractors.py" />
+    <Compile Include="game.py" />
+    <Compile Include="ghostAgents.py" />
+    <Compile Include="grading.py" />
+    <Compile Include="graphicsCrawlerDisplay.py" />
+    <Compile Include="graphicsDisplay.py" />
+    <Compile Include="graphicsGridworldDisplay.py" />
+    <Compile Include="graphicsUtils.py" />
+    <Compile Include="gridworld.py" />
+    <Compile Include="keyboardAgents.py" />
+    <Compile Include="layout.py" />
+    <Compile Include="learningAgents.py" />
+    <Compile Include="mdp.py" />
+    <Compile Include="pacman.py" />
+    <Compile Include="pacmanAgents.py" />
+    <Compile Include="projectParams.py" />
+    <Compile Include="qlearningAgents.py" />
+    <Compile Include="reinforcementTestClasses.py" />
+    <Compile Include="testClasses.py" />
+    <Compile Include="testParser.py" />
+    <Compile Include="textDisplay.py" />
+    <Compile Include="textGridworldDisplay.py" />
+    <Compile Include="util.py" />
+    <Compile Include="valueIterationAgents.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="layouts\" />
+    <Folder Include="test_cases\" />
+    <Folder Include="test_cases\q1\" />
+    <Folder Include="test_cases\q2\" />
+    <Folder Include="test_cases\q3\" />
+    <Folder Include="test_cases\q4\" />
+    <Folder Include="test_cases\q5\" />
+    <Folder Include="test_cases\q6\" />
+    <Folder Include="test_cases\q7\" />
+    <Folder Include="test_cases\q8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="analysis.pyc" />
+    <Content Include="analysis.py~" />
+    <Content Include="environment.pyc" />
+    <Content Include="featureExtractors.pyc" />
+    <Content Include="game.pyc" />
+    <Content Include="ghostAgents.pyc" />
+    <Content Include="grading.pyc" />
+    <Content Include="graphicsDisplay.pyc" />
+    <Content Include="graphicsUtils.pyc" />
+    <Content Include="gridworld.pyc" />
+    <Content Include="keyboardAgents.pyc" />
+    <Content Include="layout.pyc" />
+    <Content Include="layouts\capsuleClassic.lay" />
+    <Content Include="layouts\contestClassic.lay" />
+    <Content Include="layouts\mediumClassic.lay" />
+    <Content Include="layouts\mediumGrid.lay" />
+    <Content Include="layouts\minimaxClassic.lay" />
+    <Content Include="layouts\openClassic.lay" />
+    <Content Include="layouts\originalClassic.lay" />
+    <Content Include="layouts\smallClassic.lay" />
+    <Content Include="layouts\smallGrid.lay" />
+    <Content Include="layouts\testClassic.lay" />
+    <Content Include="layouts\trappedClassic.lay" />
+    <Content Include="layouts\trickyClassic.lay" />
+    <Content Include="learningAgents.pyc" />
+    <Content Include="mdp.pyc" />
+    <Content Include="pacman.pyc" />
+    <Content Include="pacmanAgents.pyc" />
+    <Content Include="projectParams.pyc" />
+    <Content Include="qlearningAgents.pyc" />
+    <Content Include="reinforcementTestClasses.pyc" />
+    <Content Include="testClasses.pyc" />
+    <Content Include="testParser.pyc" />
+    <Content Include="test_cases\CONFIG" />
+    <Content Include="test_cases\q1\1-tinygrid.solution" />
+    <Content Include="test_cases\q1\1-tinygrid.test" />
+    <Content Include="test_cases\q1\2-tinygrid-noisy.solution" />
+    <Content Include="test_cases\q1\2-tinygrid-noisy.test" />
+    <Content Include="test_cases\q1\3-bridge.solution" />
+    <Content Include="test_cases\q1\3-bridge.test" />
+    <Content Include="test_cases\q1\4-discountgrid.solution" />
+    <Content Include="test_cases\q1\4-discountgrid.test" />
+    <Content Include="test_cases\q1\CONFIG" />
+    <Content Include="test_cases\q2\1-bridge-grid.solution" />
+    <Content Include="test_cases\q2\1-bridge-grid.test" />
+    <Content Include="test_cases\q2\CONFIG" />
+    <Content Include="test_cases\q3\1-question-3.1.solution" />
+    <Content Include="test_cases\q3\1-question-3.1.test" />
+    <Content Include="test_cases\q3\2-question-3.2.solution" />
+    <Content Include="test_cases\q3\2-question-3.2.test" />
+    <Content Include="test_cases\q3\3-question-3.3.solution" />
+    <Content Include="test_cases\q3\3-question-3.3.test" />
+    <Content Include="test_cases\q3\4-question-3.4.solution" />
+    <Content Include="test_cases\q3\4-question-3.4.test" />
+    <Content Include="test_cases\q3\5-question-3.5.solution" />
+    <Content Include="test_cases\q3\5-question-3.5.test" />
+    <Content Include="test_cases\q3\CONFIG" />
+    <Content Include="test_cases\q4\1-tinygrid.solution" />
+    <Content Include="test_cases\q4\1-tinygrid.test" />
+    <Content Include="test_cases\q4\2-tinygrid-noisy.solution" />
+    <Content Include="test_cases\q4\2-tinygrid-noisy.test" />
+    <Content Include="test_cases\q4\3-bridge.solution" />
+    <Content Include="test_cases\q4\3-bridge.test" />
+    <Content Include="test_cases\q4\4-discountgrid.solution" />
+    <Content Include="test_cases\q4\4-discountgrid.test" />
+    <Content Include="test_cases\q4\CONFIG" />
+    <Content Include="test_cases\q5\1-tinygrid.solution" />
+    <Content Include="test_cases\q5\1-tinygrid.test" />
+    <Content Include="test_cases\q5\2-tinygrid-noisy.solution" />
+    <Content Include="test_cases\q5\2-tinygrid-noisy.test" />
+    <Content Include="test_cases\q5\3-bridge.solution" />
+    <Content Include="test_cases\q5\3-bridge.test" />
+    <Content Include="test_cases\q5\4-discountgrid.solution" />
+    <Content Include="test_cases\q5\4-discountgrid.test" />
+    <Content Include="test_cases\q5\CONFIG" />
+    <Content Include="test_cases\q6\CONFIG" />
+    <Content Include="test_cases\q6\grade-agent.solution" />
+    <Content Include="test_cases\q6\grade-agent.test" />
+    <Content Include="test_cases\q7\CONFIG" />
+    <Content Include="test_cases\q7\grade-agent.solution" />
+    <Content Include="test_cases\q7\grade-agent.test" />
+    <Content Include="test_cases\q8\1-tinygrid.solution" />
+    <Content Include="test_cases\q8\1-tinygrid.test" />
+    <Content Include="test_cases\q8\2-tinygrid-noisy.solution" />
+    <Content Include="test_cases\q8\2-tinygrid-noisy.test" />
+    <Content Include="test_cases\q8\3-bridge.solution" />
+    <Content Include="test_cases\q8\3-bridge.test" />
+    <Content Include="test_cases\q8\4-discountgrid.solution" />
+    <Content Include="test_cases\q8\4-discountgrid.test" />
+    <Content Include="test_cases\q8\5-coord-extractor.solution" />
+    <Content Include="test_cases\q8\5-coord-extractor.test" />
+    <Content Include="test_cases\q8\CONFIG" />
+    <Content Include="textDisplay.pyc" />
+    <Content Include="util.pyc" />
+    <Content Include="valueIterationAgents.pyc" />
+    <Content Include="valueIterationAgents.py~" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

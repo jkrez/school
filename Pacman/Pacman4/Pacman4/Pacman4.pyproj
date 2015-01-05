@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>3b129357-b9b8-4b54-b437-840187519727</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>busters.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Pacman4</Name>
+    <RootNamespace>Pacman4</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>-s -k 3 -a inference=MarginalInference -g DispersingGhost -p GreedyBustersAgent -n 10</CommandLineArguments>
+    <InterpreterPath />
+    <InterpreterArguments />
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="docs\" />
+    <Folder Include="layouts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="busters.html" />
+    <Content Include="busters.png" />
+    <Content Include="commands.txt" />
+    <Content Include="dbn.png" />
+    <Content Include="disperse.png" />
+    <Content Include="docs\busters.html" />
+    <Content Include="docs\bustersAgents.html" />
+    <Content Include="docs\bustersGhostAgents.html" />
+    <Content Include="docs\distanceCalculator.html" />
+    <Content Include="docs\game.html" />
+    <Content Include="docs\ghostAgents.html" />
+    <Content Include="docs\graphicsDisplay.html" />
+    <Content Include="docs\graphicsUtils.html" />
+    <Content Include="docs\inference.html" />
+    <Content Include="docs\keyboardAgents.html" />
+    <Content Include="docs\layout.html" />
+    <Content Include="docs\util.html" />
+    <Content Include="layouts\bigHunt.lay" />
+    <Content Include="layouts\oneHunt.lay" />
+    <Content Include="layouts\openHunt.lay" />
+    <Content Include="layouts\smallHunt.lay" />
+    <Content Include="projects.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="busters.py" />
+    <Compile Include="bustersAgents.py" />
+    <Compile Include="bustersGhostAgents.py" />
+    <Compile Include="distanceCalculator.py" />
+    <Compile Include="game.py" />
+    <Compile Include="ghostAgents.py" />
+    <Compile Include="graphicsDisplay.py" />
+    <Compile Include="graphicsUtils.py" />
+    <Compile Include="inference.py" />
+    <Compile Include="keyboardAgents.py" />
+    <Compile Include="layout.py" />
+    <Compile Include="util.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>
