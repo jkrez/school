@@ -1,4 +1,15 @@
 school
 ======
 
-School work and scratchpad coding
+School work and scratchpad coding.
+
+Pacman
+======
+
+This directory contains my berkley pacman project solutions from the AI course 
+at the Univeristy of Washington.
+
+Interview
+=========
+
+This directory contains my scratchpad work for coding questions.
