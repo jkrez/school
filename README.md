@@ -6,8 +6,8 @@ School work and scratchpad coding.
 Pacman
 ======
 
-This directory contains my berkley pacman project solutions from the AI course 
-at the Univeristy of Washington.
+This directory contains my pacman project solutions from the AI course 
+CSEP573 at the Univeristy of Washington.
 
 Interview
 =========
